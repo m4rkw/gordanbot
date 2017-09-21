@@ -1,7 +1,7 @@
 
 class GordanBot
   def self.map
-    {
+    { 
       48 => "use zfs, use docker.",
       99 => "have you tried killing all the poor?",
       69 => "i don't have to help you.",
