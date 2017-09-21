@@ -12,7 +12,18 @@ class GordanBot
       101 => "Bro, do you even OpenStack?",
       102 => "Supply and demand.",
       110 => "Landmines.",
-      111 => "Use sunwarrior, use water."
+      111 => "Use sunwarrior, use water.",
+      112 => "Hitler was a socialist",
+      113 => "STRING THEM UP!",
+      114 => "Back in Chechnya, we had to duck to avoid machine gun fire before we even got to our desks to BOFH.",
+      115 => "Lock them in a room with Linus and Theo and don't open it until they're all dead.",
+      116 => "Psh! It doesn't even support partitions",
+      117 => "Do you even VACUUM FULL ANALYZE, uppity pondslime?",
+      118 => "Don't worry, fainting is a normal reaction to seeing my rate card.",
+      119 => "You just don't understand the true nature of InnoDB.",
+      120 => "It's a liberal conspiracy to steal from the hard-working typist",
+      121 => "Just because *you* can't write Perl doesn't mean we all can't.",
+      122 => "Give up now, it's quicker than failing.",
     }
   end
 
@@ -22,6 +33,12 @@ class GordanBot
     if m.raw.match /DEVOPS AS FUCK/
       sleep 1
       return "DEVOPS AS FUCK"
+    elsif m.raw.match /docker/i
+      sleep 1
+      return "Where you put your penis is up to you, but I don't want to hear about it."
+    elsif m.raw.match /openstack/i
+      sleep 1
+      return "More like opencrack, amirite?"
     end
 
     a = Random.rand(2500)
