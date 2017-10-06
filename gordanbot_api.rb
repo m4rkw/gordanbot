@@ -2,7 +2,7 @@
 class GordanBot
   def self.map
     { 
-      48 => "use zfs, use docker.",
+      48 => "use gayfs, use cockdocker.",
       99 => "have you tried killing all the poor?",
       69 => "i don't have to help you.",
       11 => "STARVE PEASANT!",
@@ -24,6 +24,16 @@ class GordanBot
       120 => "It's a liberal conspiracy to steal from the hard-working typist",
       121 => "Just because *you* can't write Perl doesn't mean we all can't.",
       122 => "Give up now, it's quicker than failing.",
+      150 => "That's gayer than mysql's clustering algorithm",
+      151 => "Bend over and let me shove mysql up there",
+      152 => "BEGIN; INSERT (genitals) INTO (ANUS); COMMIT; -- Shit! ROLLBACK! ROLLBACK!",
+      153 => "SELECT * FROM men INNER JOIN men WHERE genitals IN ass",
+      154 => "UNION ALL -- Pride, yo!",
+      155 => "Vote gay, vote InnoDB!",
+      156 => "I've heard some pretty gay things in my time, but partitioning is 'up there', as us gays say",
+      157 => "MySQL is the biggest powerbottom of all, it'll take anything you shove in it til it falls over",
+      158 => "If you want me like that, you'd better share your MyISAM tuning secrets",
+      159 => "Seriously dude, use MySQL. Nothing will fuck you harder, guaranteed!"
     }
   end
 
