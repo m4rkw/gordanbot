@@ -43,10 +43,10 @@ class GordanBot
     if m.raw.match /DEVOPS AS FUCK/
       sleep 1
       return "DEVOPS AS FUCK"
-    elsif m.raw.match /docker/i
+    elsif m.raw.match(/docker/i) and !m.raw.match(/<.*?docker.*?>/)
       sleep 1
       return "Where you put your penis is up to you, but I don't want to hear about it."
-    elsif m.raw.match /openstack/i
+    elsif m.raw.match(/openstack/i) and !m.raw.match(/<.*?openstack.*?>/)
       sleep 1
       return "More like opencrack, amirite?"
     end
