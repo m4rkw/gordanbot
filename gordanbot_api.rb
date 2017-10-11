@@ -40,17 +40,15 @@ class GordanBot
   def self.handle_message(m)
     #return "#{m.user}: no"
 
-    File.open("/tmp/debug","a+") do |f|
-      f.write(m.raw)
-    end
+    message = r.raw.gsub(/\A.*? /, '')
 
-    if m.raw.match /DEVOPS AS FUCK/
+    if message.match /DEVOPS AS FUCK/
       sleep 1
       return "DEVOPS AS FUCK"
-    elsif m.raw.match(/docker/i) and !m.raw.match(/<.*?docker.*?>/)
+    elsif message.match /docker/i
       sleep 1
       return "Where you put your penis is up to you, but I don't want to hear about it."
-    elsif m.raw.match(/openstack/i) and !m.raw.match(/<.*?openstack.*?>/)
+    elsif message.match /openstack/i
       sleep 1
       return "More like opencrack, amirite?"
     end
