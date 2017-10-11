@@ -40,6 +40,10 @@ class GordanBot
   def self.handle_message(m)
     #return "#{m.user}: no"
 
+    File.open("/tmp/debug","a+") do |f|
+      f.write(m.raw)
+    end
+
     if m.raw.match /DEVOPS AS FUCK/
       sleep 1
       return "DEVOPS AS FUCK"
